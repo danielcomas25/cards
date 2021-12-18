@@ -6,5 +6,7 @@ func main() {
 
 	// hand, remainingDeck := deal(cards, 5) // Two returning values
 	// cards.saveToFile("my_cards")
-	newDeckFromFile("my_cards").print()
+	cards := newDeckFromFile("my_cards")
+	cards.shuffle()
+	cards.print()
 }
